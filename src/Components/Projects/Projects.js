@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import img1 from '../../Assets/Image/2 (1).png';
 import img2 from '../../Assets/Image/2 (2).png';
 import img3 from '../../Assets/Image/2 (3).png';
@@ -15,7 +16,7 @@ const Projects = () => {
                     <div className="card-body">
                         <h2 className="card-title">
                             Travel BD
-                            <div className="badge badge-secondary">
+                            <div className="badge badge-secondary shadow-lg">
                                 <a href='https://travelbd-client.web.app/' target="_blank" rel="noreferrer">Live View</a>
                             </div>
                         </h2>
@@ -27,7 +28,10 @@ const Projects = () => {
                             <div className="badge badge-secondary badge-outline">Express.js</div>
                             <div className="badge badge-secondary badge-outline">MongoDB</div>
                             <div className="badge badge-secondary badge-outline">Firebase</div>
-
+                            
+                        </div>
+                        <div className='flex flex-col place-items-center mt-4'>
+                            <Link to='/projectone' className='btn btn-primary px-4'>View More</Link>
                         </div>
                     </div>
                 </div>
@@ -36,8 +40,8 @@ const Projects = () => {
                     <div className="card-body">
                         <h2 className="card-title">
                             Red Code
-                            <div className="badge badge-secondary">
-                                <a href='https://red-code-client.web.app/' target="_blank" rel="noreferrer">Live View</a>
+                            <div className="badge badge-secondary shadow-lg">
+                                <a href='https://red-code-client.web.app/' target="_blank" rel="noreferrer" >Live View</a>
                             </div>
                         </h2>
                         <p>Red Code is an online programming courses web app build with React JS.</p>
@@ -50,6 +54,9 @@ const Projects = () => {
                             <div className="badge badge-secondary badge-outline">Firebase</div>
 
                         </div>
+                        <div className='flex flex-col place-items-center mt-4'>
+                            <Link to='/projecttwo' className='btn btn-primary px-4'>View More</Link>
+                        </div>
                     </div>
                 </div>
                 <div className="card w-96 bg-base-100 shadow-xl">
@@ -57,7 +64,7 @@ const Projects = () => {
                     <div className="card-body">
                         <h2 className="card-title">
                             Quizzy BD
-                            <div className="badge badge-secondary">
+                            <div className="badge badge-secondary shadow-lg">
                                 <a href='https://zingy-pasca-f4c1b0.netlify.app/' target="_blank" rel="noreferrer">Live View</a>
                             </div>
                         </h2>
@@ -70,6 +77,9 @@ const Projects = () => {
                             <div className="badge badge-secondary badge-outline">Authentication</div>
                             <div className="badge badge-secondary badge-outline">Node.js</div>
 
+                        </div>
+                        <div className='flex flex-col place-items-center mt-4'>
+                            <Link to='/projectthree' className='btn btn-primary px-4'>View More</Link>
                         </div>
                     </div>
                 </div>
