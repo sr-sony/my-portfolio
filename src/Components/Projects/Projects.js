@@ -1,11 +1,17 @@
 import React from 'react';
+import img1 from '../../Assets/Image/2 (1).png';
+import img2 from '../../Assets/Image/2 (2).png';
+import img3 from '../../Assets/Image/2 (3).png';
 
 const Projects = () => {
     return (
-        <div>
-            <div className='grid grid-cols-3'>
+        <div className='bg-base-200'>
+            <div className='text-4xl font-bold mb-10 uppercase text-center'>
+                <p>My Projects</p>
+            </div>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 md:gap-6 justify-items-center'>
                 <div className="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+                    <figure><img src={img3} alt="Shoes" className='h-[300px]' /></figure>
                     <div className="card-body">
                         <h2 className="card-title">
                             Travel BD
@@ -25,8 +31,8 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+                <div className="card w-96 bg-base-100 shadow-xl my-10 lg:my-0">
+                    <figure><img src={img2} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">
                             Red Code
@@ -47,7 +53,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+                    <figure><img src={img1} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">
                             Quizzy BD

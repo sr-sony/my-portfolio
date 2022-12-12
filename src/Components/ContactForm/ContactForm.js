@@ -30,10 +30,10 @@ const ContactForm = () => {
     return (
         <div>
             <div className="hero min-h-screen bg-base-200">
-                <div className="hero-content flex-col lg:flex-row lg:justify-between">
-                    <img src="" alt='' className="max-w-sm rounded-full shadow-2xl" />
+                <div className="hero-content bg-white rounded-xl shadow-xl p-10 flex-col lg:flex-row lg:justify-between">
+                   
                     <div>
-                        <h1 className='font-bold text-4xl my-4'>Contact Me</h1>
+                        <h1 className='font-bold text-4xl my-4 text-center'>Contact Me</h1>
                         <Form onSubmit={handleOnSubmit}>
                             <Form.Field
                                 id='form-input-control-email'
@@ -63,7 +63,7 @@ const ContactForm = () => {
                                 placeholder='Message…'
                                 required
                             />
-                            <Button type='submit' color='green'>Submit</Button>
+                            <Button className='mx-auto' type='submit' color='green'>Submit</Button>
                         </Form>
                     </div>
                 </div>
